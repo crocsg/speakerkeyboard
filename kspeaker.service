@@ -1,0 +1,11 @@
+[Unit]
+Description=Keyboard speaker service
+After=network.target
+
+
+[Service]
+ExecStart=/home/sgodin/work/keyboardspeaker/venv/bin/python3 -m kspeaker
+WorkingDirectory=/home/sgodin/work/keyboardspeaker/
+
+[Install]
+WantedBy=multi-user.target

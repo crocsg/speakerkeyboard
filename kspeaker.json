@@ -1,0 +1,13 @@
+{
+    "device": "",
+    "speed": 70,
+    "volume": 30,
+    "voice": "mb-fr4",
+    "sync":0,
+    "messages": {
+        "59": "Papa",
+        "60": "Maman",
+        "61": "La bonne",
+        "62": "et moi"
+    }
+}
