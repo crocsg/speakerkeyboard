@@ -9,37 +9,37 @@ we use [shapelesskeyvoard as usb keyboard for user input](https://github.com/cro
 
 You must have a working audio system on your Raspberry Pi (the standard audio output is fine for speech synthesis)
 You must have epseack-ng and mbrola installed 
-'''
+```
 $ sudo apt-get install espeak-ng
 $ espeak-ng "Hello Word"
 $ espeak-ng --voices
 $ espeak-ng -v fr-fr "Bonjour Monde"
 $ pip3 install py-espeak-ng
-'''
+```
 
-'''
+```
 $ wget https://raspberry-pi.fr/download/espeak/mbrola3.0.1h_armhf.deb -O mbrola.deb
 $ sudo dpkg -i mbrola.deb
 $ sudo apt install mbrola-fr4 -y
 $ espeak-ng -v mb-fr4 "Hello world"
-'''
+```
 
 # Install on Raspberry PI
 
 You must be in root user to use *keyboard* python module
 
 create a virtual env
-'''python -m venv venv'''
+```python -m venv venv```
 
 activate the virtual env
-'''source ./venv/bin/activate'''
+```source ./venv/bin/activate```
 
 install python dependencies
-'''pip install -r requirement.txt'''
+```pip install -r requirement.txt```
 
 # Configuration
-the configuration is available in *kspeaker.json* 
-'''
+the configuration is available in *kspeaker.json*.
+```
 {
     "device": "",
     "speed": 70,
@@ -53,6 +53,13 @@ the configuration is available in *kspeaker.json*
         "62": "et moi"
     }
 }
-'''
-the association of keyboard keycode and message is done in "messages" part. 
+```
+the association of keyboard keycode and message is done in "messages" part. You can use the software to display keyboard keycode.
+
+# Run
+
+when virtual env activated simply use :
+```
+python kspeaker.py
+```
 
