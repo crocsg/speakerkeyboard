@@ -54,7 +54,8 @@ the configuration is available in *kspeaker.json*.
     }
 }
 ```
-the association of keyboard keycode and message is done in "messages" part. You can use the software to display keyboard keycode.
+*device*, *speed*, *volume* and *voice* are speack-ng TTS parameters.
+the association of keyboard keycode and message is done in *messages* part. You can use the software to display keyboard keycode.
 
 # Run
 
