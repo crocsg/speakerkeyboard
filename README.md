@@ -14,7 +14,6 @@ $ sudo apt-get install espeak-ng
 $ espeak-ng "Hello Word"
 $ espeak-ng --voices
 $ espeak-ng -v fr-fr "Bonjour Monde"
-$ pip3 install py-espeak-ng
 ```
 
 ```
