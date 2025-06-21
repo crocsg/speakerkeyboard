@@ -4,8 +4,8 @@ After=network.target
 
 
 [Service]
-ExecStart=/home/sgodin/work/keyboardspeaker/venv/bin/python3 -m kspeaker
-WorkingDirectory=/home/sgodin/work/keyboardspeaker/
+ExecStart=/home/tactilmap/speakerkeyboard/venv/bin/python3 -m kspeaker
+WorkingDirectory=/home/tactilmap/speakerkeyboard
 
 [Install]
 WantedBy=multi-user.target
