@@ -3,8 +3,9 @@
     "speed": 80,
     "volume": 30,
     "voice": "mb-fr4",
-    "sync":0,
+    "sync":1,
     "messages": {
+        "24": "message de test",
         "59": "Ligne A, Station la poterie",
         "60": "Ligne A, Station Sainte Anne",
         "61": "Ligne B, Station Via Silva",
