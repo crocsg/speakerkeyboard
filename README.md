@@ -9,6 +9,8 @@ we use [shapelesskeyvoard as usb keyboard for user input](https://github.com/cro
 
 You must have a working audio system on your Raspberry Pi (the standard audio output is fine for speech synthesis)
 You must have epseack-ng and mbrola installed 
+
+Espeack-ng install
 ```
 $ sudo apt-get install espeak-ng
 $ espeak-ng "Hello Word"
@@ -16,10 +18,11 @@ $ espeak-ng --voices
 $ espeak-ng -v fr-fr "Bonjour Monde"
 ```
 
+Mbrola and mbrola voice (fr)
 ```
 $ wget https://raspberry-pi.fr/download/espeak/mbrola3.0.1h_armhf.deb -O mbrola.deb
 $ sudo dpkg -i mbrola.deb
-$ sudo apt install mbrola-fr4 -y
+$ sudo apt install mbrola-fr1 mbrola-fr2 mbrola-fr3 mbrola-fr4 -y
 $ espeak-ng -v mb-fr4 "Hello world"
 ```
 
