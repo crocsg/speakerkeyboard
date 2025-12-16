@@ -3,12 +3,14 @@ import platform
 import threading
 import options
 import keyboard
-from espeakng import ESpeakNG
+from pipertts import GoodTTS
 
 flagspeak = False
 flagdown = False
 speakmutex = threading.Lock()
-esng = ESpeakNG()
+#esng = ESpeakNG()
+tts = GoodTTS ()
+tts.open ("fr_FR-siwis-medium.onnx")
 
 def process_key (scan_code):
     global flagspeak
@@ -17,7 +19,8 @@ def process_key (scan_code):
         msg = options.get_messages()
         text = msg[scan_code]
         print ("debut", text)
-        esng.say (text, sync=options.get_sync())
+        #esng.say (text, sync=options.get_sync())
+        tts.say (text)
         print ("fin")
         speakmutex.release()
     else:
@@ -46,12 +49,12 @@ def onKey (event):
 def main ():
     options.load_options()
     
-    esng.voice = options.get_voice ()
-    esng.speed = options.get_speed ()
-    esng.volume = options.get_volume ()
+    #esng.voice = options.get_voice ()
+    #esng.speed = options.get_speed ()
+    #esng.volume = options.get_volume ()
 
     
-    esng.say('bonjour')
+    tts.say('bonjour')
 
     keyboard.hook (onKey)
 
