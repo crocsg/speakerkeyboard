@@ -3,12 +3,12 @@
 this project AIM to build vocal synthesis system on Raspberry PI for an interactive public transport map
 
 the speech synthesis use espeack-ng/mbrola
-we use [shapelesskeyvoard as usb keyboard for user input](https://github.com/crocsg/shapeless_rp2040_40keys)
+we use [shapelesskeyboard as usb keyboard for user input](https://github.com/crocsg/shapeless_rp2040_40keys)
 
 # Prerequesite
 
 You must have a working audio system on your Raspberry Pi (the standard audio output is fine for speech synthesis)
-You must have epseack-ng and mbrola installed 
+Even when using piper espeack-ng is still used for phoneme encoding. You must have epseack-ng and mbrola installed 
 
 Espeack-ng install
 ```
@@ -28,7 +28,7 @@ $ espeak-ng -v mb-fr4 "Hello world"
 
 # Install on Raspberry PI
 
-You must be in root user to use *keyboard* python module
+You must be in **root** user to use *keyboard* python module
 
 create a virtual env
 ```python -m venv venv```

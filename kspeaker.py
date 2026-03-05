@@ -53,7 +53,6 @@ def main ():
     #esng.speed = options.get_speed ()
     #esng.volume = options.get_volume ()
 
-    
     tts.say('bonjour')
 
     keyboard.hook (onKey)

@@ -90,7 +90,7 @@ def oldtest ():
 
 def main ():
     
-    tts = GoodTTS ();
+    tts = GoodTTS ()
     tts.open ("fr_FR-siwis-medium.onnx")
     for i in range (0,2):
         tts.say(str(i))
