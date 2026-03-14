@@ -2,7 +2,7 @@
 
 this project AIM to build vocal synthesis system on Raspberry PI for an interactive public transport map
 
-the speech synthesis use espeack-ng/mbrola
+the speech synthesis now use [piper TTS](https://github.com/OHF-Voice/piper1-gpl)
 we use [shapelesskeyboard as usb keyboard for user input](https://github.com/crocsg/shapeless_rp2040_40keys)
 
 # Prerequesite
@@ -46,7 +46,7 @@ the configuration is available in *kspeaker.json*.
     "device": "",
     "speed": 70,
     "volume": 30,
-    "voice": "mb-fr4",
+    "voice": "-",
     "sync":0,
     "messages": {
         "59": "Papa",
